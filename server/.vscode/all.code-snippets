@@ -1,0 +1,65 @@
+{
+  "React Native Class Component": {
+    "prefix": ["rn"],
+    "body": [
+      "//import liraries",
+      "import React, { Component } from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      "import styles from './styles';",
+      "",
+      "// create a component",
+      "class ${1:filename} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <View style={styles.container}>",
+      "        <Text>${1:filename}</Text>",
+      "      </View>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "//make this component available to the app",
+      "export default ${1:filename};",
+      ""
+    ],
+    "description": "Class Component Template"
+  },
+  "React JS Class Component": {
+    "prefix": ["react"],
+    "body": [
+      "//import liraries",
+      "import React, { Component } from 'react';",
+      "",
+      "// create a component",
+      "class ${1:filename} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div style={styles.container}>",
+      "        <h1>${1:filename}</h1>",
+      "      </div>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "//make this component available to the app",
+      "export default ${1:filename};",
+      ""
+    ],
+    "description": "Class Component Template"
+  },
+  "Style Template": {
+    "prefix": "style",
+    "body": [
+      "import React, {Component} from 'react';",
+      "import {StyleSheet} from 'react-native';",
+      "",
+      "export default StyleSheet.create({",
+      "container: {",
+      "  flex: 1,",
+      "},",
+      "});",
+      ""
+    ],
+    "description": "Style file template"
+  }
+}
